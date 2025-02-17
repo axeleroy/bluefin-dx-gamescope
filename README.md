@@ -16,7 +16,7 @@ This repository is meant to be a template for building your own custom Universal
 - [Bluefin](https://projectbluefin.io/)
 - [uCore](https://projectucore.io/)
 - [main](https://github.com/ublue-os/main/)
-- [hwe](https://github.com/ublue-os/hwe/)
+- [hwe](https://github.com/ublue-os/hwe/)L
 
 or any other base image if you want to start from scratch:
 
