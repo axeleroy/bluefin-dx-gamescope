@@ -1,4 +1,12 @@
-# image-template
+# bluefin-dx-gamescope
+
+[![Build Custom Image](https://github.com/axeleroy/bluefin-dx-gamescope/actions/workflows/build.yml/badge.svg)](https://github.com/axeleroy/bluefin-dx-gamescope/actions/workflows/build.yml)
+
+A [Bluefin Developer Experience](https://docs.projectbluefin.io/bluefin-dx/) image with Valve's
+[gamescope](https://github.com/ValveSoftware/gamescope) installed.
+
+> [!WARNING]  
+> This image is based on `bluefin-dx-nvidia:stable`: hence it comes with Nvidia drivers out of the box.
 
 # Purpose
 
