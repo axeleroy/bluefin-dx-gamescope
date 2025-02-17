@@ -9,6 +9,6 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
-sudo dnf install steam -y
-sudo dnf install gamescope -y
+dnf config-manager setopt fedora-cisco-openh264.enabled=1
+dnf install steam -y
+dnf install gamescope -y
