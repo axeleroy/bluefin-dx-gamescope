@@ -2,6 +2,10 @@
 
 set -ouex pipefail
 
+### Patch supergfxctl-gex to work on modern GNOME Shell versions 47 (current) and 48 (next)
+cat /usr/share/gnome-shell/extensions/supergfxctl-gex@asus-linux.org/metadata.json \
+ | jq '."shell-version"= ["47","48"]' > /usr/share/gnome-shell/extensions/supergfxctl-gex@asus-linux.org/metadata.json
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
