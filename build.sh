@@ -2,9 +2,8 @@
 
 set -ouex pipefail
 
-### Patch supergfxctl-gex to work on modern GNOME Shell versions 47 (current) and 48 (next)
-cat /usr/share/gnome-shell/extensions/supergfxctl-gex@asus-linux.org/metadata.json \
- | jq '."shell-version"= ["47","48"]' > /usr/share/gnome-shell/extensions/supergfxctl-gex@asus-linux.org/metadata.json
+# Remove supergfxctl-gex as it is useless on Desktop
+dnf remove gnome-shell-extension-supergfxctl-gex -y
 
 ### Install packages
 
@@ -12,6 +11,8 @@ cat /usr/share/gnome-shell/extensions/supergfxctl-gex@asus-linux.org/metadata.js
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
+
+# dnf5 -y config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-steam.repo
 
 dnf copr enable lizardbyte/stable -y
 dnf install Sunshine -y
